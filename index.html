@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="landingpage.css" />
+    <title>LMS-Shunya.ek</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">Shunya.Ek Learning</div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <i class="ri-menu-line" style="font-size: 24px"></i>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#review">Reviews</a>
+        <a href="./userManagement.html">LogIn</a>
+        <!-- <a href="./userManagement.html" >SignUp</a> -->
+      </div>
+    </nav>
+    <section class="container">
+      <div class="content__container">
+        <h1>
+          Best Learning<br />
+          <span class="heading__1">Education Platform</span><br />
+          <span class="heading__2">in The World</span>
+        </h1>
+        <p>
+          Unlock your full learning potential with our intuitive education
+          platform. Seamlessly blending technology and education, we provide an
+          immersive learning environment that combines interactive lessons,
+          virtual classrooms, and intelligent feedback.
+        </p>
+        <form>
+          <input type="text" placeholder="What do you want to learn" />
+          <button type="submit">Search Course</button>
+        </form>
+      </div>
+      <div class="image__container">
+        <img src="images/header-1.jpg" alt="header" />
+        <img src="images/header-2.jpg" alt="header" />
+      </div>
+    </section>
+
+    <section class="browse-container">
+      <div class="browse">
+        <div class="browse-text">
+          <h2>Learn from our interactive courses</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="course-section">
+      <div class="course-three-column"> -->
+
+    <!-- ------------- course cards ------------  -->
+
+    <!-- <div class="course-card">
+              <div class="card-img">
+                  <img src="images/python.svg" alt="">
+              </div>
+              <p class="course-name">Python</p>
+              <div class="card-text">
+                  <p>100 lessons | 11 hours<br>with John Doe</p>
+                  <img src="images/team1.jpg" alt="">
+              </div>
+              <div class="card-price">
+                  <p>Advanced</p>
+                  <p>$99</p>
+              </div>
+              <button class="btn-primary"><a href="./courseDetail.html">Enroll</a></button>
+          </div>
+
+          <div class="course-card">
+              <div class="card-img">
+                  <img src="images/html.svg" alt="">
+              </div>
+              <p class="course-name">HTML</p>
+              <div class="card-text">
+                  <p>150 lessons | 15 hours<br>with Mary Jo</p>
+                  <img src="images/team2.jpg" alt="">
+              </div>
+              <div class="card-price">
+                  <p>Intermediate</p>
+                  <p>$59</p>
+              </div>
+              <button class="btn-primary"><a href="./courseDetail.html">Enroll</a></button>
+          </div>
+
+          <div class="course-card">
+              <div class="card-img">
+                  <img src="images/javascript.svg" alt="">
+              </div>
+              <p class="course-name">Java script</p>
+              <div class="card-text">
+                  <p>50 lessons | 6 hours<br>with Phil Ho</p>
+                  <img src="images/team3.jpg" alt="">
+              </div>
+              <div class="card-price">
+                  <p>Beginner</p>
+                  <p>$29</p>
+              </div>
+              <button class="btn-primary"><a href="./courseDetail.html">Enroll</a></button>
+          </div>
+      </div>
+      <button class="btn-primary">View all courses</button>
+  </section> -->
+
+    <section class="course-section">
+      <div class="course-three-column" id="courseList">
+        <!-- Course cards will be dynamically added here using JavaScript -->
+      </div>
+      <button class="btn-primary">View all courses</button>
+    </section>
+
+    <section class="money-back-guaranty">
+      <div class="money-back-img">
+        <img src="images/money-back.png" alt="" />
+      </div>
+      <div class="money-back">
+        <h2>100% Money Back Guaranty</h2>
+        <p>If you're not satisfied, we're not satisfied</p>
+        <p>That's why we happily give your money back within 30 days.</p>
+        <button class="btn-primary">Read more</button>
+      </div>
+    </section>
+
+    <hr class="hr-line" />
+
+    <section class="our-community-container">
+      <div class="our-community">
+        <h2>You are at right place</h2>
+        <p>
+          Over 1,000,000 learners all over the world use our apps on all types
+          of devices.
+        </p>
+      </div>
+    </section>
+
+    <section class="reviews-container">
+      <div class="reviews">
+        <!-- ------------ review card --------------- -->
+
+        <div class="review">
+          <div class="review-img">
+            <img src="images/review1.jpg" alt="" />
+            <div class="review-name">
+              <p>Michael John</p>
+              <p><b>Java Script</b></p>
+            </div>
+          </div>
+          <p>
+            Probably the best way to use my phone. This is a revolutionary way
+            to learn code. The comments on each question/section adds a real
+            world perspective.
+          </p>
+        </div>
+
+        <div class="review">
+          <div class="review-img">
+            <img src="images/review2.jpg" alt="" />
+            <div class="review-name">
+              <p>Alexander Jo</p>
+              <p><b>Python</b></p>
+            </div>
+          </div>
+          <p>
+            Wow... I mean... WOW! Boys and girls, just go for it... I mean, it's
+            just so simple, so pretty and well organized. I've been looking for
+            free, self learning tools all over for all kinds of stuff and this
+            is by far, the best one. Just too good! And by the way, the
+            community is there, always, to help.
+          </p>
+        </div>
+
+        <div class="review">
+          <div class="review-img">
+            <img src="images/review3.jpg" alt="" />
+            <div class="review-name">
+              <p>Emma Ho</p>
+              <p><b>SQL</b></p>
+            </div>
+          </div>
+          <p>
+            Appreciations! Superb application with step-by-step teaching. You
+            are making a lot of impacts especially in Ghana, Africa. I couldn't
+            afford the university to learn to code. Thanks so much. Keep it up.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="hr-line" />
+
+    <section class="ready-to-learn">
+      <h2>Ready to learn ?</h2>
+      <div class="ready-card-container">
+        <!-- -------------------- ready to learn cards ------------------  -->
+
+        <div class="ready-card">
+          <div class="ready-img">
+            <img src="images/pic-1.png" alt="" />
+          </div>
+          <h3>Learn Anywhere</h3>
+          <p>Switch between your computer, tablet or mobile devices.</p>
+        </div>
+
+        <div class="ready-card">
+          <div class="ready-img">
+            <img src="images/pic-2.png" alt="" />
+          </div>
+          <h3>Expert Teachers</h3>
+          <p>Learn from industry experts who are passionate about teaching.</p>
+        </div>
+
+        <div class="ready-card">
+          <div class="ready-img">
+            <img src="images/pic-3.png" alt="" />
+          </div>
+          <h3>Unlimited Access</h3>
+          <p>
+            Choose what you'd like to learn from our extensive subscription
+            library.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" datarouter="#app">
+      <section class="footer__section">
+        <ul class="footer__navigation">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">Courses</a></li>
+          <li><a href="/services">Reviews</a></li>
+          <li><a href="/products">Login</a></li>
+          <li><a href="/faq">signUp</a></li>
+        </ul>
+      </section>
+      <section class="footer__section">
+        <ul class="footer__social-media">
+          <li>
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+              ><i class="ri-facebook-circle-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+              ><i class="ri-twitter-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="ri-instagram-fill"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__section">
+        <ul class="footer__contact-info">
+          <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+          <li><a href="mailto:contact@example.com">contact@example.com</a></li>
+          <li>1234 Street Name, City, Country</li>
+        </ul>
+      </section>
+      <section class="footer__section">
+        <ul class="footer__legal">
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-of-use">Terms of Use</a></li>
+          <li><a href="/cookie-policy">Cookie Policy</a></li>
+        </ul>
+      </section>
+      <section class="footer__section">
+        <div class="footer__copyright">
+          © Your Company 2023. All rights reserved.
+        </div>
+        <div class="footer__credits">Designed by Your Name.</div>
+      </section>
+    </footer>
+
+    <script src="./script.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Reference to the courseList container
+        const courseListContainer = document.getElementById("courseList");
+
+        // Function to fetch and display courses
+        function displayCourses() {
+          openDatabase().then((db) => {
+            const transaction = db.transaction(["courses"], "readonly");
+            const store = transaction.objectStore("courses");
+            const getAllRequest = store.getAll();
+
+            getAllRequest.onsuccess = function () {
+              const courses = getAllRequest.result;
+
+              // Display each course as a card in the UI
+              courses.forEach((course) => {
+                displayCourseCard(course);
+              });
+            };
+
+            getAllRequest.onerror = function () {
+              console.error("Error retrieving courses:", getAllRequest.error);
+            };
+          });
+        }
+
+        // Function to display a course card
+        function displayCourseCard(course) {
+          const card = document.createElement("div");
+          card.classList.add("course-card");
+          card.innerHTML = `
+                <div class="card-img">
+                    <img src="${course.image}" alt="">
+                </div>
+                <p class="course-name">${course.name}</p>
+                <div class="card-text">
+                    <p>${
+                      course.lessons != undefined ? course.lessons : 10
+                    } lessons | ${
+            course.duration != undefined ? course.duration : "12 hr"
+          } with ${
+            course.instructor != undefined ? course.instructor : "Anonymous"
+          }</p>
+                    <img src="${course.instructorImage}" alt="">
+                </div>
+                <div class="card-price">
+                    <p>${course.level}</p>
+                    <p>${course.price}</p>
+                </div>
+                <button class="btn-primary" onclick="enroll('${
+                  course.courseId
+                }')"><a>Enroll</a></button>
+            `;
+
+          console.log("CorrseID", course.courseId);
+          courseListContainer.appendChild(card);
+        }
+
+        // Open the existing IndexedDB database (LearningManagementDB)
+        function openDatabase() {
+          return new Promise((resolve, reject) => {
+            const request = window.indexedDB.open("LearningManagementDB", 1);
+
+            request.onsuccess = function (event) {
+              const db = event.target.result;
+              resolve(db);
+            };
+
+            request.onerror = function (event) {
+              reject(event.target.error);
+            };
+          });
+        }
+
+        // Initial load of the course list
+        displayCourses();
+      });
+
+      function enroll(courseId) {
+        console.log("CourseID", courseId);
+        // Assuming 'courseId' is the unique identifier for the course
+        // Construct the URL with query parameters
+        const coursePageUrl = `./courseDetail.html?courseId=${courseId}`;
+
+        // Redirect to the CoursePage
+        window.location.href = coursePageUrl;
+      }
+    </script>
+  </body>
+</html>
+
+<!-- href="./courseDetail.html" -->

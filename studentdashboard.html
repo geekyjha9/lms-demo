@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./theme/pari.css">
+    <link rel="stylesheet" href="components/components.css">
+    <link rel="stylesheet" href="./theme/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-nav">
+            <img src="./assets/img/logo-small.png" style="width:2rem;" class="smallLogo">
+            <button class="navbar-toggler" id="sidebar-toggle" type="button">&#9776;</button>
+        </div>
+        <div class="navbar-collapse">
+            <form class="navbar-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search here">
+            </form>
+        </div>
+
+        <ul class="navbar-nav">
+            <li class="nav-item"><img src="./assets/img/flag.png" style="width:1.6rem;" class="flag"></li>
+            <li class="nav-item"><img src="./assets/img/header-icon-05.svg" style="width:1.2rem;" class="bell"></li>
+            <li class="nav-item"><img src="./assets/img/header-icon-04.svg" style="width:1.2rem;" class="full"></li>
+            <li class="nav-item"><img src="./assets/img/avatar-01.jpg" style="width:2rem;" class="user">
+            </li>
+            <li class="nav-item dropdown">
+                <div class="navbar-collapse">
+                    <div class="dropdown">
+                        <div class="dropdown-btn">
+                            <div>
+                                <p>Rahul Raj </p>
+                                <span>Administrator</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item" data-value="option1">My Profile</div>
+                            <div class="dropdown-item" data-value="option2">Inbox</div>
+                            <div class="dropdown-item" data-value="option3">Logout</div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <!-- <button class="sidebar-toggle">&#9776;</button> -->
+        <ul class="sidebar-menu">
+            <li class="menu-item"><a href="#">Main Menu</a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-table-cells-large"></i> Dashboard</span><i
+                        class="fa-solid fa-chevron-right"></i></a>
+                <ul class="submenu">
+                    <li><a href="#">Admin Dashboard</a></li>
+                    <li><a href="#">Teacher Dashboard</a></li>
+                    <li><a href="#">Student Dashboard</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-graduation-cap"></i> Students</span><i
+                        class="fa-solid fa-chevron-right"></i></a>
+                <ul class="submenu">
+                    <li><a href="#">Students List</a></li>
+                    <li><a href="#">Students View</a></li>
+                    <li><a href="#">Students Add</a></li>
+                    <li><a href="#">Students Edit</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-chalkboard-user"></i> Teachers</span><i
+                        class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-building"></i>
+                        Departments</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-book-open-reader"></i>
+                        Subjects</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-receipt"></i>
+                        Invoices</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#">Main Menu</a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-receipt"></i>
+                        Accounts</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-holly-berry"></i>
+                        Holiday</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-comment-dollar"></i>
+                        Fees</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-clipboard-list"></i>
+                        Exam List</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-calendar-day"></i>
+                        Events</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-table"></i>
+                        Time Table</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-book"></i>
+                        Library</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-newspaper"></i>
+                        Blogs</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-cog"></i>
+                        Settings</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-shield-alt"></i>
+                        Authentication</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-file"></i>
+                        Blank Page</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-baseball-ball"></i>
+                        Sports</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-hotel"></i>
+                        Hostel</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-receipt"></i>
+                        Transport</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-receipt"></i>
+                        Base UI</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+            <li class="menu-item"><a href="#"><span><i class="fa-solid fa-receipt"></i>
+                        Elements</span><i class="fa-solid fa-chevron-right"></i>
+                </a></li>
+        </ul>
+    </div>
+
+    <div class="hero">
+        <div class="hero__content heading">
+            <h3>Welcome Vikas!</h3>
+            <div class="breadcrumbs">
+                <a href="./index.html">Home</a>
+                <span class="separator">/</span>
+                <span class="current">Student</span>
+            </div>
+        </div>
+        
+
+        <div class="card-container">
+            <div class="card">
+                <img src="./assets/img/teacher-icon-01.svg" alt="Image 1" class="card-img-top">
+                <div class="card-body">
+                    <h6 class="card-title">All Courses</h6>
+                    <p class="card-text">04/06</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/teacher-icon-02.svg" alt="Image 2" class="card-img-top">
+                <div class="card-body">
+                    <h6 class="card-title">All Projects</h6>
+                    <p class="card-text">40/60</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/student-icon-01.svg" alt="Image 3" class="card-img-top">
+                <div class="card-body">
+                    <h6 class="card-title">Test Attended</h6>
+                    <p class="card-text">30/50</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/student-icon-02.svg" alt="Image 4" class="card-img-top">
+                <div class="card-body">
+                    <h6 class="card-title">Test Passed</h6>
+                    <p class="card-text">15/20</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__content heading">
+            <h3>My Courses</h3>
+            
+        </div>
+
+        <div class="courses card-container">
+            <div class="card">
+                <img src="./assets/img/blockchain.jpg" alt="Image 1" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Blockchain Development</p>
+                    <h6 class="card-title">₹4999</h6>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/webd.jpg" alt="Image 2" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Website Development</p>
+                    <h6 class="card-title">₹2999</h6>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/python.jpg" alt="Image 3" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Python Development</p>
+                    <h6 class="card-title">₹1999</h6>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/backend.jpg" alt="Image 4" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Backend Development</p>
+                    <h6 class="card-title">₹1199</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="submain">
+            <div class="section">
+                <div class="section1">
+                    <div class="lesson">
+                        <div class="lessonHead">
+                            <h2>Today's Lesson</h2>
+                            <h4><i class="fa-solid fa-ellipsis"></i>
+                                View All Courses <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </h4>
+                        </div>
+                        <div class="lessondetails">
+                            <div class="percent">
+                                <p>8</p>
+                                <p>0</p>
+                                <p>%</p>
+                            </div>
+                            <div class="class">
+                                <div>
+                                    <div><i class="fa-solid fa-display"></i></div>
+                                    <div class="topic"><span>Class</span>
+                                        <p>Electrical Engg</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div><i class="fa-solid fa-book-open"></i></div>
+                                    <div><span>Lessons</span>
+                                        <p>5 Lessons</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div><i class="fa-regular fa-clock"></i></div>
+                                    <div><span>Time</span>
+                                        <p>Lessons</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="class">
+                                <div>
+                                    <div><i class="fa-regular fa-note-sticky"></i></div>
+                                    <div class="topic"><span>Assignment</span>
+                                        <p>5 Assignment</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div><i class="fa-solid fa-user"></i></div>
+                                    <div><span>Staff</span>
+                                        <p>Dhyanendra</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div><i class="fa-solid fa-book"></i></div>
+                                    <div><span>Lesson Learned</span>
+                                        <p>10/50</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <div class="btn1">skip</div>
+                                <div class="btn2">Continue</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section3">
+                    <h2>Lesson History</h2>
+                    <div class="history">
+                        <div class="histDetails">
+                            <p>Sep22</p>
+                            <div class="histSub">
+                                <h3>Mathematics</h3>
+                                <div>
+                                    <p><i class="fa-solid fa-calendar-days"></i>
+                                         Sep 5,2022 | <i class="fa-solid fa-clock"></i>
+                                         09:00 - 10:00 am
+                                    </p>
+                                </div>
+                            </div>
+                            <p>In Progress</p>
+                        </div>
+                        <div class="histDetails">
+                            <p>Sep23</p>
+                            <div class="histSub">
+                                <h3>Geography</h3>
+                                <div>
+                                    <p><i class="fa-solid fa-calendar-days"></i>
+                                         Sep 5,2022 | <i class="fa-solid fa-clock"></i>
+                                         09:00 - 10:00 am
+                                    </p>
+                                </div>
+                            </div>
+                            <p>Completed</p>
+                        </div>
+                        <div class="histDetails">
+                            <p>Sep22</p>
+                            <div class="histSub">
+                                <h3>Mathematics</h3>
+                                <div>
+                                    <p><i class="fa-solid fa-calendar-days"></i>
+                                         Sep 5,2022 | <i class="fa-solid fa-clock"></i>
+                                         09:00 - 10:00 am
+                                    </p>
+                                </div>
+                            </div>
+                            <p>In Progress</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="events">
+                <hr>
+                <div class="eventHead">
+                    <h4>Upcoming Events</h4><i class="fa-solid fa-plus"></i>
+                </div>
+                
+                <div class="event1">
+                    <div class="eventdate">
+                        <p>10 Jan</p>
+                        <hr><i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="eventdetails">
+                        <div>08:00 am</div>
+                        <div class="eventsub">
+                            <p class="eventsubhead">English</p>
+                            <p class="eventsubpara">Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div>08:00 - 09:00 am</div>
+                    </div>
+                    <div class="eventdetails">
+                        <div>09:00 am</div>
+                        <div class="eventsub">
+                            <p class="eventsubhead">Mathematics</p>
+                            <p class="eventsubpara">Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div>09:00 - 10:00 am</div>
+                    </div>
+                    <div class="eventdetails">
+                        <div>10:00 am</div>
+                        <div class="eventsub">
+                            <p class="eventsubhead">History</p>
+                            <p class="eventsubpara">Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div>10:00 - 11:00 am</div>
+                    </div>
+                    <div class="eventdetails">
+                        <div>11:00 am</div>
+                        <div class="eventsub">
+                            <p class="eventsubhead">Break</p>
+                            <p class="eventsubpara">Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div>11:00 - 12:00 am</div>
+                    </div>
+                    <div class="eventdetails">
+                        <div>12:00 am</div>
+                        <div class="eventsub">
+                            <p class="eventsubhead">History</p>
+                            <p class="eventsubpara">Lorem ipsum dolor sit.</p>
+                        </div>
+                        <div>12:00 - 1:00 pm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./components/components.js"></script>
+
+    <script src="./script.js"></script>
+    <script>
+        isValidSession().then((isValid) => {
+            if (!isValid) {
+                window.location.href = "./index.html"; // Redirect to login page if not logged in
+            }
+        });
+    </script>
+</body>
+
+</html>

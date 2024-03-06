@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Creators Dashboard</h1>
+
+    <a href="newcourse.html">Add New Courses</a>
+
+    <a id="logoutLink" href="#">LogOut</a>
+
+    <script src="./script.js"></script>
+    <script>
+    //   isValidSession().then((isValid) => {
+    //     if (!isValid) {
+    //       window.location.href = "./index.html"; // Redirect to login page if not logged in
+    //     }
+    //   });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const logoutLink = document.getElementById("logoutLink");
+
+        logoutLink.addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent the default behavior of the link
+
+          // Clear the sessionStorage
+          sessionStorage.clear();
+
+          // Redirect to the login page
+          window.location.href = "userManagement.html"; // Change "login.html" to your actual login page
+        });
+      });
+    </script>
+  </body>
+</html>
