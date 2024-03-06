@@ -1,68 +1,4 @@
-/*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById("nav-menu"),
-  navToggle = document.getElementById("nav-toggle"),
-  navClose = document.getElementById("nav-close");
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
-if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    navMenu.classList.add("show-menu");
-  });
-}
-
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-if (navClose) {
-  navClose.addEventListener("click", () => {
-    navMenu.classList.remove("show-menu");
-  });
-}
-
-/*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelectorAll(".nav__link");
-
-function linkAction() {
-  const navMenu = document.getElementById("nav-menu");
-  // When we click on each nav__link, we remove the show-menu class
-  navMenu.classList.remove("show-menu");
-}
-navLink.forEach((n) => n.addEventListener("click", linkAction));
-
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-function scrollHeader() {
-  const header = document.getElementById("header");
-  // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-  if (this.scrollY >= 50) header.classList.add("scroll-header");
-  else header.classList.remove("scroll-header");
-}
-window.addEventListener("scroll", scrollHeader);
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll("section[id]");
-
-function scrollActive() {
-  const scrollY = window.pageYOffset;
-
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute("id");
-
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
-    } else {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
-    }
-  });
-}
-window.addEventListener("scroll", scrollActive);
-
-////////////////ABOVE IS JS OF LANDING PAGE//////////////////
 
 const container = document.querySelector(".container"),
   pwShowHide = document.querySelectorAll(".showHidePw"),
@@ -188,13 +124,13 @@ document.addEventListener("DOMContentLoaded", function () {
           commentStore.createIndex("courseId", "courseId");
         }
 
-        // if (!db.objectStoreNames.contains("sessions")) {
-        //     const sessionStore = db.createObjectStore("sessions", {
-        //         keyPath: "sessionId",
-        //         autoIncrement: true,
-        //     });
-        //     sessionStore.createIndex("userId", "userId");
-        // }
+        if (!db.objectStoreNames.contains("sessions")) {
+            const sessionStore = db.createObjectStore("sessions", {
+                keyPath: "sessionId",
+                autoIncrement: true,
+            });
+            sessionStore.createIndex("userId", "userId");
+        }
 
         if (!db.objectStoreNames.contains("enrollments")) {
           const enrollmentStore = db.createObjectStore("enrollments", {
@@ -268,21 +204,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
           addRequest.onsuccess = function () {
             console.log("User registered successfully!");
+            alert("User registered successfully!");
+
+            window.location.href = "./userManagement.html";
             // Optionally, redirect the user to the dashboard or show a success message
           };
 
           addRequest.onerror = function () {
             console.error("Error registering user:", addRequest.error);
+            alert("Error registering user: " + addRequest.error);
             // Handle the error, e.g., show an error message to the user
           };
         } else {
           console.error("Username is already taken.");
+          alert("Username is already taken.");
           // Handle the case where the username is already registered, show an error message to the user
         }
       };
 
       request.onerror = function () {
         console.error("Error checking existing user:", request.error);
+        alert("Error checking existing user:", request.error);
         // Handle the error, e.g., show an error message to the user
       };
     });
